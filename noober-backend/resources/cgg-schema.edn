@@ -1,0 +1,11 @@
+{:objects
+ {:User
+  {:description "Noober users"
+   :fields
+   {:id {:type {non-null ID}}}}}
+ :queries
+ {:healthcheck
+  {:type String
+   :description "Health check endpoint"
+   :args {}
+   :resolve :query/health-check}}}
